@@ -138,34 +138,6 @@ async function generatePDF(name, email, organization) {
       }
     }
   
-    y -= 40;
-    page.drawText("Signatures:", { x: 50, y, size: 14, font: helveticaBold, color: rgb(0, 0, 0) });
-    y -= 40;
-  
-    page.drawLine({ start: { x: 50, y }, end: { x: 250, y }, thickness: 1, color: rgb(0, 0, 0) });
-    y -= 10;
-  
-    page.drawText(`${name} (Interested Party)`, {
-      x: 50,
-      y,
-      size: 10,
-      font: helveticaFont,
-      color: rgb(0, 0, 0),
-    });
-  
-    y -= 40;
-  
-    page.drawLine({ start: { x: 50, y }, end: { x: 250, y }, thickness: 1, color: rgb(0, 0, 0) });
-    y -= 10;
-  
-    page.drawText("TrustWall Representative", {
-      x: 50,
-      y,
-      size: 10,
-      font: helveticaFont,
-      color: rgb(0, 0, 0),
-    });
-  
     page.drawText("TrustWall - Protecting Your Privacy in the Age of AI", {
       x: 50,
       y: 50,
