@@ -35,7 +35,7 @@ export function DemoVideo() {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Demo Video Coming Soon</h3>
                 <p className="text-slate-400 max-w-md text-center mb-6">
-                  Our team is currently preparing a demonstration of TrustWall's powerful privacy protection features.
+                  Our team is currently preparing a demonstration of TrustWalls powerful privacy protection features.
                 </p>
                 <div className="text-xs text-slate-500">This space is reserved for the product demo video</div>
               </div>
