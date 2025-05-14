@@ -39,8 +39,7 @@ export function HeroSection() {
             </h3>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-emerald-400">
               <a
-                href="https://www.linkedin.com/in/pappu-jha-link"
-                target="_blank"
+                href="https://www.linkedin.com/in/pappujha2004/"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1 hover:underline hover:text-white"
               >
@@ -48,8 +47,7 @@ export function HeroSection() {
                 Pappu Jha
               </a>
               <a
-                href="https://www.linkedin.com/in/rabindra-giri-link"
-                target="_blank"
+                href="https://www.linkedin.com/in/rabindra-giri-05125b242/"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1 hover:underline hover:text-white"
               >
