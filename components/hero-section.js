@@ -1,5 +1,5 @@
-import { Shield, Lock, Eye } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Shield, Lock, Eye, Linkedin } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export function HeroSection() {
   return (
@@ -19,20 +19,44 @@ export function HeroSection() {
           </p>
 
           <p className="text-slate-400 max-w-2xl">
-            TrustWall is a Chrome extension that automatically redacts your personal and sensitive information when
-            interacting with AI chatbots, starting with DeepSeek integration.
+            TrustWall is a Chrome extension that automatically redacts your
+            personal and sensitive information when interacting with AI
+            chatbots, starting with DeepSeek integration.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-6 text-lg rounded-lg">
-              Get Early Access
-            </Button>
-            <Button
-              variant="outline"
-              className="border-slate-500 text-slate-300 hover:text-white px-8 py-6 text-lg rounded-lg"
+            <a
+              href="#signup"
+              className="inline-block bg-emerald-500 hover:bg-emerald-600 text-white text-base sm:text-lg font-medium px-6 py-3 rounded-lg"
             >
-              Learn More
-            </Button>
+              Get Early Access
+            </a>
+          </div>
+
+          <div className="text-center pt-4">
+            <h3 className="text-lg font-semibold text-slate-300 mb-1">
+              Meet the Founders
+            </h3>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-emerald-400">
+              <a
+                href="https://www.linkedin.com/in/pappu-jha-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 hover:underline hover:text-white"
+              >
+                <Linkedin className="h-4 w-4" />
+                Pappu Jha
+              </a>
+              <a
+                href="https://www.linkedin.com/in/rabindra-giri-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 hover:underline hover:text-white"
+              >
+                <Linkedin className="h-4 w-4" />
+                Rabindra Giri
+              </a>
+            </div>
           </div>
 
           <div className="pt-8 flex items-center justify-center">
@@ -45,7 +69,9 @@ export function HeroSection() {
                     <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                     <div className="w-3 h-3 rounded-full bg-green-500"></div>
                   </div>
-                  <div className="text-xs text-slate-400 flex-1 text-center">DeepSeek Chat</div>
+                  <div className="text-xs text-slate-400 flex-1 text-center">
+                    DeepSeek Chat
+                  </div>
                 </div>
                 <div className="p-4">
                   <div className="flex gap-4 mb-4">
@@ -55,10 +81,14 @@ export function HeroSection() {
                     <div className="flex-1 bg-slate-700 p-3 rounded-lg">
                       <p className="text-sm text-slate-300">
                         My name is{" "}
-                        <span className="bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded">REDACTED</span> and my
-                        email is{" "}
-                        <span className="bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded">REDACTED</span>. Can
-                        you help me with this project?
+                        <span className="bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded">
+                          REDACTED
+                        </span>{" "}
+                        and my email is{" "}
+                        <span className="bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded">
+                          REDACTED
+                        </span>
+                        . Can you help me with this project?
                       </p>
                     </div>
                   </div>
@@ -68,8 +98,9 @@ export function HeroSection() {
                     </div>
                     <div className="flex-1 bg-slate-700 p-3 rounded-lg">
                       <p className="text-sm text-slate-300">
-                        I'd be happy to help you with your project! I don't need your personal information to assist
-                        you. What kind of project are you working on?
+                        I'd be happy to help you with your project! I don't need
+                        your personal information to assist you. What kind of
+                        project are you working on?
                       </p>
                     </div>
                   </div>
@@ -80,5 +111,5 @@ export function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
